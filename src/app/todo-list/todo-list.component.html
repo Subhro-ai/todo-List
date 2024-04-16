@@ -5,5 +5,5 @@
         <button class="rounded-button" (click)="submit()">Submit</button>
    <!-- <p>  {{title}} </p> -->
    <!-- <p>{{list[2].title}}</p> -->
-   <app-items *ngFor="let element of list" [item]="element"></app-items>
+   <app-items *ngFor="let element of list" [item]="element" (buttonClick)="onDelete($event)"></app-items>
 </div>

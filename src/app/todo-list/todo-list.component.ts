@@ -27,4 +27,10 @@ export class TodoListComponent {
     this.list.push(new MyObject(this.count, this.title, this.desc));
     this.count+=1;
   }
+
+  onDelete(count: number): void {
+    // console.log('Button in c2 clicked with argument:', count);
+    count -= 1;
+    this.list.splice(count, 1)
+  }
 }

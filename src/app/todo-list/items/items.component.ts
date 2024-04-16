@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-items',
@@ -9,5 +9,10 @@ export class ItemsComponent {
   @Input() 
   item: { count: number; title: string; description: string; } = { count: 0, title: '', description: '' };
 
+  @Output() buttonClick = new EventEmitter<number>();
+
+  delete(count:number): void {
+    this.buttonClick.emit(count);
+  }
 
 }
