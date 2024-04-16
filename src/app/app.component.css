@@ -1,0 +1,12 @@
+h1 {
+    color: #DDE6ED;
+    font-size: 500%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+div{
+    display: flex;
+    justify-content: center ;
+}

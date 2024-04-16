@@ -2,7 +2,8 @@
     <div class="input-container">
         <input type="text" [(ngModel)]="title" placeholder="Enter title">
         <input type="text" [(ngModel)]="desc" placeholder="Enter description">
-        <button class="rounded-button">Submit</button>
-    </div>
+        <button class="rounded-button" (click)="submit()">Submit</button>
    <!-- <p>  {{title}} </p> -->
+   <!-- <p>{{list[2].title}}</p> -->
+   <app-items *ngFor="let element of list" [item]="element"></app-items>
 </div>
