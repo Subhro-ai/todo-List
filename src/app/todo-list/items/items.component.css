@@ -4,6 +4,7 @@
     margin: 5px 0px;
     border-radius: 20px;
     position:relative;
+    display: flex;
 }
 
 p {
@@ -19,12 +20,12 @@ p {
 
 .description {
     font-size: 20px;
-    padding-left: 33px;
     opacity: 90%;
 }
 
 .block {
     display: flex;
+
     align-items: center;
 }
 
