@@ -14,10 +14,13 @@ p {
 
 .title {
     font-size: 30px;
+    margin-bottom: -15px;
 }
 
 .description {
     font-size: 20px;
+    padding-left: 33px;
+    opacity: 90%;
 }
 
 .block {
