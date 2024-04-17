@@ -1,10 +1,13 @@
 
 <div class="block">
     <div class="item-container">
+        <div class="delete-button-container">
+            <button (click)="delete(item.count)" class="delete-button"><span class="material-symbols-outlined">
+                delete
+                </span></button>
+        </div>
         <p class="title"> {{item.count}}. {{item.title}} </p>
         <p class="description"> {{item.description}} </p>
     </div>
-    <div class="delete-button-container">
-        <button (click)="delete(item.count)" class="delete-button">Delete</button>
-    </div>
+    
 </div>

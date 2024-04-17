@@ -30,7 +30,12 @@ export class TodoListComponent {
 
   onDelete(count: number): void {
     // console.log('Button in c2 clicked with argument:', count);
-    count -= 1;
-    this.list.splice(count, 1)
+    for (let i = 0; i < this.list.length; i++) {
+      if (this.list[i].count == count) {
+        this.list.splice(i, 1)
+      };
+      
+    }
+    count = this.list.length;
   }
 }
