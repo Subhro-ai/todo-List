@@ -22,10 +22,23 @@ export class TodoListComponent {
   desc:string = '';
   count:number=1
   list: MyObject[] = []; 
+  notext:boolean = false;
 
+  checkInput () {
+    if (this.title === '' || this.desc === '') {
+      this.notext = true;
+      return false;
+    }
+    else {
+      this.notext = false;
+      return true;
+    }
+  }
   submit () {
+    if (this.checkInput()) {
     this.list.push(new MyObject(this.count, this.title, this.desc));
     this.count+=1;
+    }
   }
 
   onDelete(count: number): void {

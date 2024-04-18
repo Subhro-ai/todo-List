@@ -16,3 +16,9 @@ div{
     display: flex;
     justify-content: center ;
 }
+
+@media screen and (max-width: 767px) {
+    h1 {
+      font-size: 400%; /* Decrease font size for smaller screens */
+    }
+  }

@@ -7,11 +7,11 @@
 
 .input-container {
     display: grid;
-  place-items: center;
+    place-items: center;
 }
 
 input {
-    width: 600px;
+    width: 80%;
     height: 40px;
     margin: 10px 20px;
     border-radius: 20px;
@@ -36,3 +36,33 @@ input {
     background-color: #DDE6ED; /* Darker green on hover */
     transition: 0.2s;
   }
+
+  .error {
+    color: rgb(255, 87, 87);
+    font-family: "Nunito", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    animation: wiggle 0.5s 1s;
+
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
