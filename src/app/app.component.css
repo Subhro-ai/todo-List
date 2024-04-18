@@ -1,9 +1,15 @@
 h1 {
     color: #DDE6ED;
     font-size: 500%;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-family: "nunito", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  /* font-size: 72px;
+  background: linear-gradient(to right, #f32170,
+					#ff6b08, #cf23cf, #eedd44);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text; */
 }
 
 div{
