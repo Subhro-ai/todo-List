@@ -1,4 +1,6 @@
 #!/bin/bash
 ng build
-cd dist/todo-list/browser
-open index.html
+# cd dist/todo-list/browser
+# open index.html
+
+ng serve
