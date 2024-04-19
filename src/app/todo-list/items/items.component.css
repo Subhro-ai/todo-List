@@ -5,6 +5,7 @@
     border-radius: 20px;
     position:relative;
     display: flex;
+    animation: fade-in 0.5s;
 }
 
 p {
@@ -48,4 +49,15 @@ p {
     background-color: red;
     transition: 0.2s;
 
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
